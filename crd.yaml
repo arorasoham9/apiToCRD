@@ -1,0 +1,63 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: alerts.araali.api
+spec:
+  group: alerts.araali.api
+  versions:
+    name: v1
+  scope: Cluster
+  names:
+    plural: alerts
+    singular: alert
+    kind: Alert
+    shortNames:
+      - alt
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: insights.araali.api
+spec:
+  group: insights.araali.api
+  versions:
+    name: v1
+  scope: Cluster
+  names:
+    plural: insights
+    singular: insight
+    kind: Insight
+    shortNames:
+      - ist
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: assets.araali.api
+spec:
+  group: assets.araali.api
+  versions:
+    name: v1
+  scope: Cluster
+  names:
+    plural: assets
+    singular: asset
+    kind: Asset
+    shortNames:
+      - ast
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: links.araali.api
+spec:
+  group: links.araali.api
+  versions:
+    name: v1
+  scope: Cluster
+  names:
+    plural: links
+    singular: link
+    kind: Links
+    shortNames:
+      - lks
